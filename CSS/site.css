@@ -1,0 +1,230 @@
+:root {
+
+    /* fonts */
+    --bm-title-font: 'Bebas Neue', sans-serif;
+    --bm-subtitle-font: 'Fira Sans', sans-serif;
+    --bm-heading-font: 'Bebas Neue', sans-serif;
+    --bm-body-font: 'Roboto', sans-serif;
+
+    /* theme colors */
+    --bm-primary-color: rgb(145, 203, 251);
+    --bm-secondary-color: rgb(66, 148, 186);
+    --bm-highlight-color: rgb(250, 225, 120);
+    --bm-dark-color: rgb(33, 33, 33);
+    --bm-light-color: rgb(222, 238, 251);
+    --bm-background-color: rgba(250, 250, 250, .8);
+
+    /* text colors */
+    --bm-font-size: 1.2rem;
+    --bm-font-weight: 400;
+    --bm-line-height: 1.5rem;
+    --bm-title-color: var(--bm-dark-color);
+
+}
+
+/* font-family: 'Bebas Neue', cursive;
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+/* Element Overrides */
+h6,
+.h6,
+h5,
+.h5,
+h4,
+.h4,
+h3,
+.h3,
+h2,
+.h2,
+h1,
+.h1 {
+    font-family: var(--bm-heading-font);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: var(--bm-title-color);
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    font-family: var(--bm-body-font);
+    font-size: var(--bm-font-size);
+    font-weight: var(--bm-font-weight);
+    line-height: var(--bm-line-height);
+    color: var(--bm-dark-color);
+    background-color: var(--bm-background-color);
+    --webkit-text-size-adjust: 100%;
+}
+
+header {
+    /* image height + 14px */
+    padding-top: 74px;
+}
+
+.mainHeader {
+    background-image: url(/IMG/DevPortFolioBG_576.png);
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-color: var(--bm-light-color);
+}
+
+.mainHeader-wrapper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.mainTitle {
+    font-family: var(--bm-title-font);
+    font-size: 2.5rem;
+    line-height: 2rem;
+    color: var(--bm-dark-color);
+}
+
+.mainLogo {
+    height: .6em;
+}
+
+.subTitle {
+    font-family: var(--bm-subtitle-font);
+    font-size: .6rem;
+    line-height: 1rem;
+    font-weight: 300;
+    letter-spacing: .09rem;
+    color: var(--bm-dark-color);
+}
+
+/* Make main section take up all available white space */
+main {
+    flex: 1 0 auto;
+}
+
+section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.section-page {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.section-page:nth-child(even) {
+    background-color: var(--bm-light-color);
+}
+
+.section-page:nth-child(odd) {
+    background-color: var(--bm-primary-color);
+}
+
+.devIcons {
+    font-size: 4rem;
+}
+
+.profilePic {
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, .8);
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+/* break points */
+/* Small */
+@media (min-width: 575.98px) {
+    .mainHeader {
+        background-image: url(/IMG/DevPortFolioBG_767.png);
+        height: 200px;
+    }
+}
+
+/* Medium */
+@media (min-width: 767.98px) {
+    .mainHeader {
+        background-image: url(/IMG/DevPortFolioBG_992.png);
+        height: 300px;
+    }
+
+    .mainTitle {
+        font-size: 4.5rem;
+        line-height: 3.5rem;
+    }
+
+    .subTitle {
+        font-size: 1.2rem;
+        line-height: 1rem;
+        font-weight: 300;
+        letter-spacing: .1rem;
+    }
+}
+
+/* Large */
+@media (min-width: 991.98px) {
+    .mainHeader {
+        background-image: url(/IMG/DevPortFolioBG_992.png);
+        height: 400px;
+    }
+
+    .mainTitle {
+        font-size: 4.5rem;
+        line-height: 3.5rem;
+    }
+
+    .subTitle {
+        font-size: 1.2rem;
+        line-height: 1rem;
+        font-weight: 300;
+        letter-spacing: .1rem;
+    }
+}
+
+/* Extra Large */
+@media (min-width: 1199.98px) {
+    .mainHeader {
+        background-image: url(/IMG/DevPortFolioBG_1200.png);
+        height: 500px;
+    }
+
+    .mainTitle {
+        font-size: 6rem;
+        line-height: 5rem;
+    }
+
+    .subTitle {
+        font-size: 1.7rem;
+        line-height: 1rem;
+        font-weight: 300;
+        letter-spacing: .1rem;
+    }
+}
+
+/* Extra Extra Large */
+@media (min-width: 1399.98px) {
+    .mainHeader {
+        background-image: url(/IMG/DevPortFolioBG_2560.png);
+        height: 500px;
+    }
+
+    .mainTitle {
+        font-size: 6rem;
+        line-height: 5rem;
+    }
+
+    .subTitle {
+        font-size: 1.7rem;
+        line-height: 1rem;
+        font-weight: 300;
+        letter-spacing: .1rem;
+    }
+}
