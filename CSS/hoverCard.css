@@ -79,6 +79,10 @@ Note: Built with square cards in mind.
     transition: 0.4s ease;
 }
 
+.hc-card .hc-content button:hover {
+    background-color: rgb(66, 148, 186);
+}
+
 .hc-card .hc-content {
     position: relative;
     z-index: 3;
@@ -91,4 +95,11 @@ Note: Built with square cards in mind.
 .hc-card:hover .hc-content {
     opacity: 1;
     transform: translateY(0px);
+}
+
+@media (min-width: 1199.98px) {
+    .hc-card {
+        width: 300px;
+        height: 300px;
+    }
 }
