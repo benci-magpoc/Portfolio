@@ -136,6 +136,10 @@ section {
     box-shadow: 0px 7px 10px rgba(0, 0, 0, .8);
 }
 
+.modalImg {
+    height: 400px;
+}
+
 footer {
     flex-shrink: 0;
 }
