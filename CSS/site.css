@@ -20,6 +20,11 @@
     --bm-line-height: 1.5rem;
     --bm-title-color: var(--bm-dark-color);
 
+    /* form colors */
+    --bm-formfocus-border-color: var(--bm-secondary-color);
+    --bm-formfocus-shadow: var(--bm-primary-color);
+    --bm-formfocus-background-color: var(--bm-background-color);
+
 }
 
 /* font-family: 'Bebas Neue', cursive;
@@ -46,6 +51,54 @@ h1,
     color: var(--bm-title-color);
 }
 
+
+/* Bootstrap Overrides */
+
+/* Button Overrides */
+.btn-outline-primary {
+    color: var(--bm-primary-color);
+    border-color: var(--bm-secondary-color) !important;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:active,
+.btn-outline-primary:focus {
+    border-color: var(--bm-highlight-color);
+    background-color: var(--bm-secondary-color);
+}
+
+.btn-primary {
+    color: white !important;
+    background-color: var(--bm-secondary-color) !important;
+    border-color: var(--bm-secondary-color);
+}
+
+.btn-primary:hover {
+    border-color: var(--bm-highlight-color);
+    filter: brightness(1.1) !important;
+}
+
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+    border-color: var(--bm-primary-color);
+    filter: brightness(1.1) !important;
+}
+
+/* Form control Overrides */
+.form-control,
+.form-select {
+    background-color: var(--bm-formfocus-background-color);
+}
+
+.form-control:focus,
+.form-select:focus {
+    background-color: var(--bm-formfocus-background-color);
+    border-color: var(--bm-formfocus-border-color);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px var(--bm-formfocus-shadow);
+}
+
+/* Regular styling */
 html,
 body {
     height: 100%;
