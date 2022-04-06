@@ -25,6 +25,9 @@
     --bm-formfocus-shadow: var(--bm-primary-color);
     --bm-formfocus-background-color: var(--bm-background-color);
 
+    /* custom navbar color */
+    --bm-nav-toggler-glow: rgba(250, 225, 120, .55);
+    --bm-nav-toggler-color: var(--bm-highlight-color);
 }
 
 /* font-family: 'Bebas Neue', cursive;
@@ -51,8 +54,27 @@ h1,
     color: var(--bm-title-color);
 }
 
+#mainNav {
+    background-color: var(--bm-dark-color);
+}
+
+#mainNav button {
+    border-color: var(--bm-highlight-color);
+}
 
 /* Bootstrap Overrides */
+
+/* Navbar Overrides */
+.navbar-toggler {
+    color: var(--bm-nav-toggler-glow) !important;
+}
+
+.navbar-toggler-icon-bm {
+    color: var(--bm-nav-toggler-color);
+    font-size: 1.5rem;
+    display: inline-block;
+    vertical-align: middle;
+}
 
 /* Button Overrides */
 .btn-outline-primary {
