@@ -197,6 +197,32 @@ footer {
     flex-shrink: 0;
 }
 
+.footer-cta {
+    width: 80%;
+    border-radius: 15px;
+    background-color: var(--bm-secondary-color);
+}
+
+.footer-bg-cta {
+    background: linear-gradient(to bottom, var(--bm-background-color), var(--bm-background-color) 50%, var(--bm-dark-color) 50%, var(--bm-dark-color) 100%);
+}
+
+.footer-main {
+    background-color: var(--bm-dark-color);
+    color: var(--bm-light-color);
+}
+
+.socialIcons {
+    font-size: 2rem;
+    color: var(--bm-secondary-color);
+    padding-left: 1rem;
+}
+
+a.socialIcons:hover {
+    color: var(--bm-highlight-color);
+    opacity: 1;
+}
+
 /* break points */
 /* Small */
 @media (min-width: 575.98px) {
