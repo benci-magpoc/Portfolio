@@ -388,7 +388,7 @@
                         </div>
                         <div class="col-md-8">
                             <div class="card-body h-100 d-flex flex-column justify-content-around">
-                                <h5 class="card-title">Card title</h5>
+                                <h5 class="card-title">Database and the web</h5>
                                 <p class="card-text line-clamp">
                                     We apply the proverb 'Look before you leap' not only to our content but our
                                     power to repurpose. A company that can synthesize courageously will (eventually)
@@ -445,7 +445,7 @@
         <!-- Contact Section -->
         <section id="contact" class="section-page">
             <h1>Hire Me!</h1>
-            <form class="row">
+            <form name="portfolioContact" method="POST" data-netlify="true" class="row p-2">
                 <div class="col-12">
                     <div class="row mb-1">
                         <div class="col-12 col-md-6 form-group">
@@ -460,22 +460,17 @@
                         </div>
                         <div class="col-12 col-md-6 form-group">
                             <label for="inputEmail" class="form-label">Email</label>
-                            <input type="email" class="form-control" name="email" id="inputEmail" placeholder="Email"
+                            <input type="text" class="form-control" name="email" id="inputEmail" placeholder="Email"
                                 required>
                         </div>
                         <div class="col-12 col-md-6 form-group">
                             <label for="inputPhone" class="form-label">Phone</label>
-                            <input type="tel" class="form-control" name="phone" id="inputPhone" placeholder="Phone">
+                            <input type="text" class="form-control" name="phone" id="inputPhone" placeholder="Phone">
                         </div>
                         <div class="col-12 form-group">
                             <label for="contactSubject" class="form-label">Subject</label>
-                            <select id="contactSubject" class="form-select" name="contactSubject">
-                                <option>Choose one...</option>
-                                <option value="freelance">Freelance Work</option>
-                                <option value="contract">Contract Offer</option>
-                                <option value="personal">Personal</option>
-                                <option value="other">Other</option>
-                            </select>
+                            <input type="text" class="form-control" name="contactSubject" id="contactSubject"
+                                placeholder="Subject">
                         </div>
                         <div class="col-12 form-group">
                             <label for="message" class="form-label">Message</label>
