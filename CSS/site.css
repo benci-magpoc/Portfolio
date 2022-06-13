@@ -145,7 +145,7 @@ header {
 }
 
 .mainHeader {
-    background-image: url(../IMG/DevPortFolioBG_576.png);
+    background-image: url(../IMG/DevPic_576.png);
     height: 200px;
     background-repeat: no-repeat;
     background-position: right top;
@@ -249,7 +249,7 @@ a.socialIcons:hover {
 /* Small */
 @media (min-width: 575.98px) {
     .mainHeader {
-        background-image: url("../IMG/DevPortFolioBG_767.png");
+        background-image: url("../IMG/DevPic_767.png");
         height: 200px;
     }
 }
@@ -257,7 +257,7 @@ a.socialIcons:hover {
 /* Medium */
 @media (min-width: 767.98px) {
     .mainHeader {
-        background-image: url("../IMG/DevPortFolioBG_992.png");
+        background-image: url("../IMG/DevPic_992.png");
         height: 300px;
     }
 
@@ -277,7 +277,7 @@ a.socialIcons:hover {
 /* Large */
 @media (min-width: 991.98px) {
     .mainHeader {
-        background-image: url("../IMG/DevPortFolioBG_992.png");
+        background-image: url("../IMG/DevPic_992.png");
         height: 400px;
     }
 
@@ -297,7 +297,7 @@ a.socialIcons:hover {
 /* Extra Large */
 @media (min-width: 1199.98px) {
     .mainHeader {
-        background-image: url("../IMG/DevPortFolioBG_1200.png");
+        background-image: url("../IMG/DevPic_1200.png");
         height: 500px;
     }
 
@@ -317,7 +317,7 @@ a.socialIcons:hover {
 /* Extra Extra Large */
 @media (min-width: 1399.98px) {
     .mainHeader {
-        background-image: url("../IMG/DevPortFolioBG_2560.png");
+        background-image: url("../IMG/DevPic_2560.png");
         height: 500px;
     }
 
